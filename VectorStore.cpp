@@ -1249,7 +1249,7 @@ void VectorStore::addText(string rawText) {
     norm = sqrt(norm);
 
     // Tạo ID mới
-    int newId = 0;
+    int newId = 1;
     if (this->count > 0 && vectorStore->getRoot() != nullptr) {
         newId = findMaxId(vectorStore->getRoot()) + 1;
     }
